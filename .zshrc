@@ -19,3 +19,27 @@ HELPDIR=/usr/local/share/zsh/help
 
 #Set default editor to nano
 export EDITOR=nano
+
+#antigen setup. This will need to be changed depending on where dotfiles is cloned.
+source ~/dotfiles/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle command-not-found
+antigen bundle brew
+antigen bundle osx
+antigen bundle rails
+antigen bundle rvm
+
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+
+# Tell antigen that you're done.
+antigen apply
