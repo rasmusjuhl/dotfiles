@@ -38,6 +38,9 @@ antigen bundle rvm
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+#Z is like j, yo.
+antigen bundle rupa/z
+
 # Load the theme.
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
