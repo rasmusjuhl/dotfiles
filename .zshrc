@@ -41,8 +41,13 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 #Z is like j, yo.
 antigen bundle rupa/z
 
-# Load the theme.
+# Load the theme. This needs a powerline font, and looks best with a color theme like base16
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
-# Tell antigen that you're done.
+# Tell antigen that we're done.
 antigen apply
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+#TheFuck
+eval $(thefuck --alias)
